@@ -1,6 +1,6 @@
 Package.describe({
   summary: "A reactive table designed for Meteor",
-  version: "0.8.23",
+  version: "0.8.23_1",
   name: "aslagle:reactive-table",
   git: "https://github.com/aslagle/reactive-table.git"
 });
@@ -17,6 +17,7 @@ Package.on_use(function (api) {
 
     api.use("fortawesome:fontawesome@4.2.0", 'client', {weak: true});
 
+    api.add_files('lib/utils.js', ['client', 'server']);
     api.add_files('lib/reactive_table.html', 'client');
     api.add_files('lib/filter.html', 'client');
     api.add_files('lib/reactive_table_i18n.js', 'client');
